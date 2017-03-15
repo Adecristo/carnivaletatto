@@ -6782,24 +6782,34 @@ h6 {
   padding-top: 10px;
 }
 #about .about-top-container {
-  height: 160px;
+  height: 165px;
   width: 600px;
   margin: 0 auto;
   padding-bottom: 10px;
+  position: relative;
 }
 #about .about-top-container .maszynka {
-  float: left;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  margin-left: -75px;
 }
 #about .about-top-container .abouth2 {
-  width: 392px;
-  float: right;
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 73px;
 }
 #about .about-top-container .abouth2 h2 {
-  font-size: 350%;
+  font-size: 450%;
   color: #fff;
-  margin: 97px 0 0 0;
-  pading-left: 50px;
   text-align: center;
+  font-weight: bold;
+  border-bottom: 3px solid #f05349;
+  border-right: 7px solid #f05349;
+}
+#about .about-top-container .abouth2 span {
+  color: #f05349;
 }
 #particles-js {
   width: 100%;

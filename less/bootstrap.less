@@ -69,6 +69,7 @@ h6 {
 @green: #146642;
 @lightgreen: #A4D2AE; //164,210,174
 @dark: #383431;
+@red: #f05349;
 @light:rgb(33,36,50);
 // Inne
 
@@ -129,22 +130,32 @@ h6 {
     background-color: @light;
     padding-top: 10px;
     .about-top-container{
-        height:160px;
+        height:165px;
         width:600px;
         margin:0 auto;
         padding-bottom: 10px;
+        position: relative;
         .maszynka{
-            float:left;
+            top:0;
+            left:0;
+            opacity: 0.9;
+            position: absolute;
+            margin-left: -75px;
         }
         .abouth2{
-            width:392px;
-            float:right;
+            width:400px;
+            margin:0 auto;
+            padding-top:73px;
             h2{
-                font-size:350%;
+                font-size:450%;
                 color:#fff;
-                margin:97px 0 0 0;
-                pading-left: 50px;
                 text-align: center;
+                font-weight: bold;   
+                border-bottom: 3px solid @red;
+                border-right: 7px solid @red;
+            }
+            span{
+                color:@red;
             }
         }
     }

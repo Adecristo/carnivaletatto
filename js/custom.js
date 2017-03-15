@@ -25,9 +25,9 @@ jQuery(window).scroll(function(){
 		});
 	}
     
-    if(wScroll<=150){
+    if(wScroll<=300){
 		$('.about-top-container').css({
-			'transform' : 'translate(0px,-'+ wScroll/2+'px)'
+			'transform' : 'translate(0px,-'+ wScroll/4+'px)'
 		});
 		/*$('.omnie-container').css({
 			'height' : 620 - wScroll/2
