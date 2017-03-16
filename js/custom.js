@@ -21,19 +21,21 @@ jQuery(window).scroll(function(){
 			'opacity' : '0'
 		});
         jQuery('.logo-img').css({
-			'opacity' : opacity
+			'opacity' : '0'
 		});
 	}
     
     if(wScroll<=300){
 		$('.about-top-container').css({
 			'transform' : 'translate(0px,-'+ wScroll/4+'px)'
-		});
-		/*$('.omnie-container').css({
-			'height' : 620 - wScroll/2
-		});*/
+		});    
 	}
     
+    if(wScroll>300){
+		$('.about-top-container').css({
+			'transform' : 'translate(0px,-75px)'
+		});
+    }
 });
 
 

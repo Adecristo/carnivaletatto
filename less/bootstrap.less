@@ -54,6 +54,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    color:#fff;
 }
 
 h1,
@@ -69,7 +70,7 @@ h6 {
 @green: #146642;
 @lightgreen: #A4D2AE; //164,210,174
 @dark: #383431;
-@red: #f05349;
+@red: rgb(240, 83, 73);
 @light:rgb(33,36,50);
 // Inne
 
@@ -113,7 +114,7 @@ h6 {
     height:700px;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
     .logo-img{
-        position: absolute;
+        position: fixed;
         width:450px;
         height:120px;
         padding-top:30px;
@@ -126,9 +127,11 @@ h6 {
 //ABOUT
 #about{
     width:100%;
-    height:800px;
+    min-height:720px;
     background-color: @light;
     padding-top: 10px;
+    padding-bottom: 160px;
+    
     .about-top-container{
         height:165px;
         width:600px;
@@ -159,19 +162,70 @@ h6 {
             }
         }
     }
+    
+    .content-wrapper{
+        width:100%;
+        padding-top: 100px;
+        min-height:500px;
+        padding-bottom: 100px;
+        background: rgba(255, 255, 255, 0.1);
+        @media screen and(max-width:992px) {
+            padding-bottom: 100px;
+        }
+        .ekipa{
+            text-align: center;
+            font-weight: bold;
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+            p{
+                margin-top:5px;
+            }
+        }
+        .content{
+            margin-top:50px;
+            font-size:14px;
+            text-align: center;
+        }
+    }
 }
 
+//PARALLAX-IMAGE
+#parallax-image{
+    background-image: url('../images/zdjecie.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:300px;
+}
 
-
-
-
-
-
-
-
-
-
-
+//WORK PRACE
+#work{
+    padding-top:80px;
+    height:620px;
+    width:100%;
+    background-color: @light;
+    h2{
+        font-size: 350%;
+        text-align: center;
+        color:#fff;
+        margin:0;
+        text-transform: uppercase;
+        &::before{
+            font-family: 'Ionicons';
+            content: "\f363";
+            margin-right:15px;
+        }
+        &::after{
+            font-family: 'Ionicons';
+            content: "\f361";
+            margin-left:15px;
+        }
+    }
+}
 
 
 

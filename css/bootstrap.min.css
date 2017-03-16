@@ -6724,6 +6724,7 @@ button.close {
 /* CUSTOM STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #fff;
 }
 h1,
 h2,
@@ -6768,7 +6769,7 @@ h6 {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
 }
 #parallax .logo-img {
-  position: absolute;
+  position: fixed;
   width: 450px;
   height: 120px;
   padding-top: 30px;
@@ -6777,9 +6778,10 @@ h6 {
 }
 #about {
   width: 100%;
-  height: 800px;
+  min-height: 720px;
   background-color: #212432;
   padding-top: 10px;
+  padding-bottom: 160px;
 }
 #about .about-top-container {
   height: 165px;
@@ -6810,6 +6812,66 @@ h6 {
 }
 #about .about-top-container .abouth2 span {
   color: #f05349;
+}
+#about .content-wrapper {
+  width: 100%;
+  padding-top: 100px;
+  min-height: 500px;
+  padding-bottom: 100px;
+  background: rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 992px) {
+  #about .content-wrapper {
+    padding-bottom: 100px;
+  }
+}
+#about .content-wrapper .ekipa {
+  text-align: center;
+  font-weight: bold;
+}
+#about .content-wrapper .ekipa img {
+  display: block;
+  margin: 0 auto;
+}
+#about .content-wrapper .ekipa p {
+  margin-top: 5px;
+}
+#about .content-wrapper .content {
+  margin-top: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+#parallax-image {
+  background-image: url('../images/zdjecie.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+#work {
+  padding-top: 80px;
+  height: 620px;
+  width: 100%;
+  background-color: #212432;
+}
+#work h2 {
+  font-size: 350%;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+#work h2::before {
+  font-family: 'Ionicons';
+  content: "\f363";
+  margin-right: 15px;
+}
+#work h2::after {
+  font-family: 'Ionicons';
+  content: "\f361";
+  margin-left: 15px;
 }
 #particles-js {
   width: 100%;
