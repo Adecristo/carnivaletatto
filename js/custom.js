@@ -6,8 +6,12 @@ $('body').smoothScroll({
 jQuery(window).scroll(function(){
 	var wScroll = jQuery(this).scrollTop();
 	 
-	
-	if(wScroll<401){
+	if(wScroll==0){
+        jQuery('.logo-img').css({
+            'opacity':'1'
+        });
+    }
+	if(wScroll<301){
         var opacity = 1-wScroll/300;
 		jQuery('#particles-js').css({
 			'opacity' : opacity
@@ -16,7 +20,7 @@ jQuery(window).scroll(function(){
 			'opacity' : opacity
 		});
 	}
-    if(wScroll>401){
+    if(wScroll>301){
 		jQuery('#particles-js').css({
 			'opacity' : '0'
 		});
@@ -54,3 +58,9 @@ function center() {
         top: boxTop - 100
     });
 }
+
+//lightbox gallery
+$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
